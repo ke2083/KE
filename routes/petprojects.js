@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Pet projects of mine', active: 'PetProjects' });
+  res.render('petprojects', { title: 'Pet projects of mine', active: 'PetProjects' });
 };
