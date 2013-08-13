@@ -1,0 +1,70 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width')
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
+    <!--[if IE 7]>
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome-ie7.min.css')
+    <![endif]-->
+  body
+    header
+        div.navbar
+            nav.navbar-inner
+                a.brand(href='/') 
+                    i.icon-home
+                    span &nbsp;home
+                ul.nav
+                    li.divider-vertical
+                    li(class= active == 'Bio' ? 'active' : '')
+                        a(href='/bio') 
+                            i.icon-rocket
+                            span &nbsp;bio
+                    li(class= active == 'TheLittleBlueBook' ? 'active' : '')
+                        a(href='/thelittlebluebook')
+                            i.icon-bookmark
+                            cite &nbsp;the Little Blue Book
+                    li(class= active == 'PetProjects' ? 'active' : '')
+                        a(href='/petprojects') 
+                            i.icon-beaker
+                            span &nbsp;pet projects
+                    li(class= active == 'Contact' ? 'active' : '')
+                        a(href='/contact') 
+                            i.icon-comment
+                            span &nbsp;contact
+    article.container-fluid
+        hr
+        block content
+        hr
+    footer
+        div.navbar
+            div.navbar-inner
+                ul.nav
+                    li
+                        a Website content &copy; Kaylee El&uacute;vian 
+                            = new Date().getFullYear()
+                    li
+                        a.st_fblike(displayText='Facebook Like')
+                    li
+                        a.st_twitter(displayText='Tweet this')
+                    li
+                        a.st_twitterfollow(displayText='Follow', st_username='KayleeEluvian')
+                    li
+                        a.st_linkedin(displayText='LinkedIn')
+                    li
+                        a.st_tumblr(displayText='Tumblr')
+                    li
+                        a.st_googleplus(displayText='Google +')
+                    li
+                        a.st_pinterest(displayText='Pin this')
+                    li
+                        a.st_email(displayText='Email page')
+    script(src="/jquery/jquery.min.js")
+    script(src='/bootstrap/bootstrap.min.js')
+    script(src='/modernizr/modernizr.min.js')
+    script(src='/google-analytics/ga.js')
+    script(src="/share_this/sharethis.js")
+    block scripts

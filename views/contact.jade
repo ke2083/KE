@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.hero-unit
+      h1
+        i.icon-comment
+        &nbsp;
+        span= title 
+        span.muted  for Kaylee
+      p.lead get in touch!
+    div.row-fluid
+        div.span3.text-center.well.well-small
+            img.img-rounded(src='/img/kaylee.jpg',alt="I'm a girl in my early 30's, have big blue eyes and long brown hair.")
+        div.span9
+            p You can link up with me on twitter 
+                a(href='http://twitter.com/KayleeEluvian')
+                    @KayleeEluvian
+                span  or ping me a message on 
+                    a(href='http://uk.linkedin.com/in/kayleeeluvian')
+                        span LinkedIn
+                    span!
+            h2 I look forward to hearing from you :)

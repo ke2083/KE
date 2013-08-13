@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    div.hero-unit
+      h1
+        i.icon-rocket 
+        &nbsp;
+        span= title
+        span.muted  and my life
+      p.lead interesting to someone, somewhere&hellip; presumably.
+    div.row-fluid
+        div.span3.text-center.images
+            div.well.well-small
+                img.img-rounded(src='/img/japan1-thumb.jpg', data-full='/img/japan1.jpg', data-title="Sengakuji", alt="In Tokyo, my home was just metres away from the beautiful Sengakuji.  A kuji is a Japanese temple, and the cherry blossom looked beautiful inside the grounds of this beautiful wooden structure.")
+            div.well.well-small
+                img.img-rounded(src='/img/japan2-thumb.jpg', data-full='/img/japan2.jpg', data-title="", alt="")
+            div.well.well-small
+                img.img-rounded(src='/img/japan3-thumb.jpg', data-full='/img/japan3.jpg', data-title="", alt="")
+        div.span9
+            p I was born in 1983 in Medway, UK.  My mother is a successful project manager.  I studied Computing at Canterbury Christ Church University, graduating in 2006 with a First and a dissertation in Human Computer Interaction.  
+            p At Uni, I was involved in the Drama Society.  I played Dracula, The Joker in Batman: The Musical and a host of other crazy roles.  I was also heavily invested in our <abbr title="Lesbian, gay, bisexual and transgender">LGBT</abbr> Society, becoming President.  In between, I could usually be found at 03:00AM in the Computing department working on projects.
+            p I was there at the Windows XP launch in London in 2001- I dragged two of my baby sisters along and one of the Microsoft staff was kind enough to watch them while I watched the keynote.  For some reason their insurance wouldn’t cover children so they couldn’t come in!
+            p I’ve always been interested in user interfaces, and I’ve used full-time most operating systems.  I’ve owned several iMacs, built my own Linux boxes (I once bought a mainframe off of eBay!  The seller let me renege on the deal when they weighed it and told me the postage) and I’ve used every single version of Microsoft Windows.
+            p I’m a bit of a Microsoft fan, although I keep it pragmatic.  I lust after Apple devices, but I know they sort of suck in practice. I periodically get bored and install Linux on something, then remember that software designed by committee gets proportionally more obtuse the larger the committee.
+            p My first PC was a Wang Microsystems 286, running MS DOS 5.0.  I upgraded it to Windows 3.0, then moved to a 486 running Windows 95.  From then on I broke a succession of PCs- a combination of my attention to detail, desire to correct even minor problems and shockingly bad luck.  It’s not all bad, though, since I am now so used to machines breaking that I can pretty much fix them with my eyes shut!
+            p My best PC was a tower I built in my final year of Uni.  A water-cooled, near-silent AMD X2 box running Gentoo Linux.  The whole OS compiled from scratch for high performance.  Since then, I’ve had to get real work done, though, so I run Windows 8 on Lenovo.
+            p Despite appearing on the radio, and getting a few auditions in London, I was never able to make a career in voice over, not even when I left University.  Voice over had been my dream since I was about 16, I’d even lived for six weeks in the US (staying with friends) trying to find jobs.  I’d always wanted to be like the American voice artist Frank Welker, my hero.
+            p I learnt to play the piano.  My favourite artists are David Bowie, Genesis (Peter Gabriel era) and my all-time greatest band is The Alan Parson’s Project.
+            p My first job in IT was as a database administrator, which basically meant I was in charge of inserting vast text files into  MySql database using Perl.  No backups, no safety net.  I once managed to delete 90% of the database and had my access banned for over a month!  
+            p Deleting <sup>9</sup>/<sub>10</sub> of our database was dumb, but mistakes do happen.  I learnt through that job, and those following, the benefits of testing, version control, research and process.  Planning before doing; looking before jumping.
+            p I moved onwards and upwards, researching and implementing web user interfaces.  The web is prone to well-meaning designers creating the equivalents of Picasso’s <cite>Weeping Woman</cite>, and engineers with good intentions creating systems that anybody, with an advanced degree in hyperbolic topology, could use.
+            p I like being in the middle, the point where art meets mathematics.
+            p I lived for a year in Tokyo, Japan.  Despite my intense love of the country, my language skills didn’t develop fast enough for me to support myself in UX there.  Unfortunately I had to sell nearly my entire, albeit small, collection of Transformers toys to help fund my time there.
+            p Now I work in the South of the UK for one of England’s largest companies.  I still get to develop, usually with new-and-shiny things like Node, Knockout or other JavaScript brilliance.  I’m an author, having published The Little Blue Book.
+            p So, I didn’t make it in voice over.  I never quite managed to get that Perl script to work right.  I didn’t get to stay in Japan forever.  Plus I’m sure there are still some undetected typos in my book!  But that's fine, because I landed right back where it's most fun.
+            p.lead I’m Kaylee El&uacute;vian- welcome to the middle between art and mathematics.
+block scripts
+    script(src='/js/lightbox.js')
+    script
+        $(document).ready(function(){
+            $('.images img').each(function(index, item){
+                $(item).attr('style','cursor: pointer;')
+                $(item).lightbox();
+            });
+        });

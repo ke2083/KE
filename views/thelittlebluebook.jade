@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    div.hero-unit
+        h1
+            i.icon-bookmark
+            &nbsp;
+            span= title
+            span.muted  free eBook
+        p.lead 200 sizzling pages of useful opinion!
+    div.row-fluid
+        div.span8
+            p My employer decided to kick off with a major web presence do-over.  It was essentially a mulligan.  All the obvious fascinations (and fears!) aside, I was asked to write two coding guides: one for usability and one for accessibility.
+            p I started the usability one first, but found it difficult.  How could I possibly sum up what makes something &lsquo;usable&rsquo;?  I then found that it just started bleeding into territory which I’d also have to cover in my accessibility guide.  What I ended up doing was junking both of them, and starting from home on a new guide.  It had to cover everything: enough of the basics so UX wasn’t black magic, technical information on what was what online (everything from the lowly text box to complicated drag-and-drop areas), hooks for the WAI-ARIA accessibility standards and examples and use cases.
+            p The result was The Little Blue Book.  I originally named it &lsquo;The UX Bible&rsquo;, but <em>bible</em> and usability don't really go together: nothing is set in stone and everything depends.  I wrote it in Word 2013, which gave it a default 'blue' style- so I named it that.
+            p The Little Blue book includes information on browsers, devices and form factors.  It has listings for all human factors, such as disabilities, and how we can write accessible sites.  There are sections on both atomic HTML controls (checkboxes, radio buttons etc.) and how to use them and also composite controls (tree controls, add/remove lists, filtering dropdown etc.).  There is a huge index and a short list of use-cases to direct the reader to relevant pages, depending on what they’re thinking of building.
+            p The book even has wireframes for common page types, and details on how HTML5 elements can help structure a webpage.
+            p Naturally, I gave copies of this book to work.  I spent some time there adding to it, so it’s only fair!  Because of that, and because I’d rather people read it than pay for it, it's free to you too.  You can <a href="https://s3-eu-west-1.amazonaws.com/ke2083/TheLittleBlueBook.pdf">download it directly from my Amazon S3 account</a>, or for free on 
+                a(href='http://store.kobobooks.com/en-US/ebook/the-little-blue-book-1')
+                    span Kobo
+                span .
+            p It's also up on Amazon, in both <a href="http://www.amazon.co.uk/The-Little-Blue-Book-ebook/dp/B00EBBVMYW">Kindle</a> (&pound;1.30~ish) and <a href="http://www.amazon.co.uk/The-Little-Blue-Book-Guide/dp/1491275626">print</a> (&pound;23~ish).  Naturally the print one isn't free, and unfortunately Amazon control the Kindle price otherwise that would be free, too.
+            p So, if you fancy a handy guide, give it a spin.
+        div.span4
+            img.img-polaroid(src='/img/bookcover.png',alt='')
